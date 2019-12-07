@@ -1,2 +1,2 @@
-# simple-python-cli-app-templeate
+# simple-python-cli-app-template
 Template for simple Python CLI applications
