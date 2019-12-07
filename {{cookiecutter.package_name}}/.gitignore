@@ -164,8 +164,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-# Cookiecutter
-output/
-python_boilerplate/
-cookiecutter-pypackage-env/

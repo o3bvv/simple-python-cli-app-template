@@ -1,0 +1,31 @@
+{
+  "project_name":              "Simple Python CLI App",
+  "package_name":              "{{ cookiecutter.project_name|lower|replace(' ', '_')|replace('-', '_') }}",
+  "executable_name":           "{{ cookiecutter.package_name|lower|replace(' ', '-')|replace('_', '-') }}",
+  "class_name_prefix":         "{{ cookiecutter.package_name|replace('-', ' ')|replace('_', ' ')|title|replace(' ', '') }}",
+  "project_short_description": "Simple Python CLI application",
+  "project_url":               "",
+  "version":                   "1.0.0",
+
+  "author_name":               "Jonh Doe",
+  "author_email":              "jonh.doe@example.com",
+  "author_username":           "jonh.doe",
+  "create_author_file":        "y",
+
+  "command_line_interface": [
+    "argparse",
+    "click"
+  ],
+
+  "config_file_format": [
+      "YAML",
+      "JSON",
+      "no config file"
+  ],
+
+  "use_pytest": "n",
+
+  "_extensions": [
+    "jinja2_time.TimeExtension"
+  ]
+}

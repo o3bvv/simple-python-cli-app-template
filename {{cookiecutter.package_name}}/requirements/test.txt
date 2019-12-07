@@ -1,0 +1,3 @@
+{%- if cookiecutter.use_pytest == 'y' %}
+pytest>=3
+{%- endif %}

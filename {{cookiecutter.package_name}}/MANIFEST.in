@@ -1,0 +1,13 @@
+{% if cookiecutter.create_author_file == 'y' -%}
+include AUTHORS.rst
+{% endif -%}
+include CHANGELOG.rst
+include README.rst
+
+include requirements/dist.txt
+include requirements/setup.txt
+include requirements/test.txt
+
+recursive-include tests *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
