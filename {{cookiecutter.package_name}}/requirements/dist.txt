@@ -1,3 +1,15 @@
 {% if cookiecutter.command_line_interface|lower == 'click' -%}
-Click==7.0
+click>=7.0,<7.1
+{%- endif %}
+jsonschema>=3.2,<3.3
+{% if cookiecutter.logging_format_json|lower == 'y' -%}
+python-json-logger>=0.1,<0.2
+{%- endif %}
+{% if cookiecutter.logging_time_zone|lower == 'local' -%}
+tzlocal>=2.0,<2.1
+{%- elif cookiecutter.logging_time_zone|lower == 'utc' -%}
+pytz==2019.3
+{%- endif %}
+{% if cookiecutter.config_file_format|lower == 'yaml' -%}
+PyYAML>=5.1,<5.2
 {%- endif %}

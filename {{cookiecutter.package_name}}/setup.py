@@ -107,7 +107,7 @@ setup(
     include_package_data=True,
     entry_points={
         'console_scripts': [
-            '{{ cookiecutter.executable_name }}={{ cookiecutter.package_name }}.main:run',
+            '{{ cookiecutter.executable_name }}={{ cookiecutter.package_name }}.main:main',
         ],
     },
 

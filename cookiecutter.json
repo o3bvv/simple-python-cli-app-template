@@ -3,6 +3,7 @@
   "package_name":              "{{ cookiecutter.project_name|lower|replace(' ', '_')|replace('-', '_') }}",
   "executable_name":           "{{ cookiecutter.package_name|lower|replace(' ', '-')|replace('_', '-') }}",
   "class_name_prefix":         "{{ cookiecutter.package_name|replace('-', ' ')|replace('_', ' ')|title|replace(' ', '') }}",
+  "env_var_name_prefix":       "{{ cookiecutter.package_name|replace(' ', '_')|replace('-', '_')|upper }}",
   "project_short_description": "Simple Python CLI application",
   "project_url":               "",
   "version":                   "1.0.0",
@@ -22,6 +23,13 @@
       "JSON",
       "no config file"
   ],
+
+  "logging_time_zone": [
+      "utc",
+      "local"
+  ],
+  "logging_include_hostname": "y",
+  "logging_format_json": "n",
 
   "use_pytest": "n",
 
