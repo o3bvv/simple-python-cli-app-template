@@ -36,7 +36,7 @@ clean-test: ## remove test and coverage artifacts
 	rm -fr htmlcov/
 	rm -fr .pytest_cache
 
-lint: ## check style with flake8
+lint: dev-deps ## check style with flake8
 	flake8 {{ cookiecutter.package_name }} tests
 
 test: ## run tests quickly with the default Python
@@ -46,7 +46,7 @@ test: ## run tests quickly with the default Python
 	python setup.py test
 {%- endif %}
 
-dist: clean ## builds source and wheel package
+dist: clean dev-deps ## builds source and wheel package
 	python setup.py sdist
 	python setup.py bdist_wheel
 	ls -l dist
