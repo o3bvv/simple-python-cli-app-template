@@ -159,17 +159,21 @@ def _maybe_override_from_env(config: Dict) -> None:
     _maybe_override_logging(config)
 
 {% if 'no' in cookiecutter.config_file_format|lower -%}
-def try_to_load_config() -> Dict:
+def try_to_load_config(
+    # extra params passed from CLI args
+) -> Dict:
 {% else %}
 def try_to_load_config(
     file_path: Optional[str]=None,
     section_name: Optional[str]=None,
+    # extra params passed from CLI args
 ) -> Dict:
 {%- endif %}
     config = copy.deepcopy(_CONFIG_DEFAULTS)
     {% if 'no' not in cookiecutter.config_file_format|lower -%}
     _maybe_override_from_file(config, file_path, section_name)
     {%- endif %}
+    # override from CLI args if passed as extra params
     _maybe_override_from_env(config)
     validate(config, _CONFIG_SCHEMA)
     return config
