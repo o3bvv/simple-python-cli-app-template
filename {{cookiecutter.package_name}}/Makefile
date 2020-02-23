@@ -54,7 +54,7 @@ dist: clean ## builds source and wheel package
 install: clean ## install the package to the active Python's site-packages
 	python setup.py install
 
-install-editable: ## install the package to the active Python's site-packages in editable mode via pip
+install-e: ## install the package into the active Python's site-packages in editable mode via pip
 	pip install -e . --no-binary :all:
 
 dev-deps: ## install development dependencies via pip
