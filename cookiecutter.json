@@ -8,9 +8,9 @@
   "project_url":               "",
   "version":                   "1.0.0",
 
-  "author_name":               "Jonh Doe",
-  "author_email":              "jonh.doe@example.com",
-  "author_username":           "jonh.doe",
+  "author_name":               "John Doe",
+  "author_email":              "john.doe@example.com",
+  "author_username":           "john.doe",
   "create_author_file":        "y",
 
   "command_line_interface": [
