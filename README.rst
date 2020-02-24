@@ -7,6 +7,8 @@ command-line interface (CLI) applications and utilities.
 The primary audience is data science and data processing teams, however,
 the template is generic enough to find a good fit in other places.
 
+Please, refer to the project's article_ to get more info.
+
 
 .. raw:: html
 
@@ -60,7 +62,7 @@ As this is a ``cookiecutter``'s template, make sure it's installed:
 Template invocation
 -------------------
 
-Default usage is same as for any other ``cookiecutter`` templates:
+Default usage is the same as for any other ``cookiecutter`` templates:
 call ``cookiecutter`` and pass template's URL as a param:
 
 
@@ -91,7 +93,8 @@ Params
 ------
 
 The template accepts several parameters to configure a project being created.
-Parameters have default values. Full set of template's params is listed below.
+Parameters have default values. The full set of template's params is listed
+below.
 
 
 ``project_name``
@@ -111,7 +114,8 @@ Parameters have default values. Full set of template's params is listed below.
 
 
 ``executable_name``
-  Name of executable file to create during package installation (``string``).
+  Name of an executable file to create during package installation
+  (``string``).
 
   Default value is calculated from ``project_name`` via slugification.
 
@@ -226,7 +230,7 @@ Parameters have default values. Full set of template's params is listed below.
 
 
 ``use_pytest``
-  Whether to use ``pytest`` as tests runner or not (``boolean``).
+  Whether to use ``pytest`` as test runner or not (``boolean``).
 
   Default value: ``n``.
 
@@ -288,12 +292,6 @@ Caveats
 As ``cookiecutter`` uses ``Jinja2`` as a template engine and as certain
 functionality provided by this template is optional, resulting files may
 contain extra newlines or be missing them.
-
-
-More info
----------
-
-Please, refer to project's article_ to get more details.
 
 
 ..
