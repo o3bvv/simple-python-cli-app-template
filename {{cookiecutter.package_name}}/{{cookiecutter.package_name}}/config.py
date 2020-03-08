@@ -173,7 +173,7 @@ def try_to_load_config(
     {% if 'no' not in cookiecutter.config_file_format|lower -%}
     _maybe_override_from_file(config, file_path, section_name)
     {%- endif %}
-    # override from CLI args if passed as extra params
     _maybe_override_from_env(config)
+    # override from CLI args if passed as extra params
     validate(config, _CONFIG_SCHEMA)
     return config
